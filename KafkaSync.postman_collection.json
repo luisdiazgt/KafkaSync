@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "f773234f-2355-42eb-a359-0b9262ae21b8",
+		"name": "KafkaSync",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensaje\": \"tres\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/kafka/text",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"kafka",
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1\r\n    ,\"firstName\": \"Luis\"\r\n    ,\"lastName\": \"Diaz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/kafka/entity",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"kafka",
+						"entity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
